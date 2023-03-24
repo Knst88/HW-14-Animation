@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="icon" type="image/png" href="/favicon.png"/>
+      <link rel="icon" type="image/png" href="https://favicon.vspravke.com/ico/1/faviconka.ru_1_143422.ico"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW 14 + Animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Shantell+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<header>
+  <div class="logo"></div>
+  <div class="menu">
+    <div class="plus">&#169;</div>
+  </div>
+  <DIV class="line1"></DIV>
+      <DIV class="line2"></DIV>
+</header>
+  <body>
+    <div class="cv">
+      
+
+      <div class="cv-enterDiv">
+        <div class="cv-enterDiv-nameText">
+    <h1>SIGN IN</h1>
+        </div>
+        <div class="cv-enterDiv-inputs">
+      <form action="/signup" method="POST">
+          <fieldset>
+        <input type="text" placeholder=" " name="Enter your login"
+        minlength="2" required tabindex="1" /> 
+        <label>Enter your login</label>
+          </fieldset>
+    <fieldset>
+        <input
+          type="password"
+          name="password"
+          placeholder=" "
+          minlength="5"
+          maxlength="8"
+          size="20"
+          required 
+          tabindex="2"
+        />
+        <label>Enter your password</label>
+          </fieldset>
+      </div>
+      <div class="cv-enterDiv-ButtonResetSubmit">
+          <button type="reset" tabindex="3">Reset</button>
+          <button type="submit" tabindex="4">Log In</button>
+      </form>
+      </div>
+    </div>
+    <div class="cv-registrationFormDiv">
+    <div class="cv-registrationFormDiv-nameText">
+      <h2><span class="or">or</span> REGISTRATION</h2>
+    </div>
+    <div class="cv-registrationFormDiv-inputs">
+    <form action="form.php" name="Registration" method="POST">
+    <fieldset>
+      <input
+          placeholder="Write your Login"
+          name="Write your Login"
+          type="text"
+          minlength="3"
+          maxlength="15"
+          required
+          tabindex="5"
+        />
+      </fieldset>
+      <fieldset>
+        <input type="password" id="WriteYourPassword" name="WriteYourPassword" placeholder="Write your password" minlength="5" maxlength="10" onchange='confirmPass();' tabindex="6" required/>
+      </fieldset>
+      <fieldset>
+      <input type="password" id="ConfirmYourPassword" name="ConfirmYourPassword" placeholder="Confirm your password" maxlength="10" onchange='confirmPass();' tabindex="7" required/>    
+    </fieldset>
+    <fieldset>
+      <input type="email" name="Write your e-mail" placeholder="Write your e-mail" tabindex="8" required />
+    </fieldset>
+    <fieldset>
+      <input
+      type="tel"
+      name="Write your mobile number"
+      placeholder="Write your mobile number"
+      pattern="\+7\d{10}"
+      tabindex="9"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <legend align="center">Choose Your Language</legend>
+    <select tabindex="10">
+        <option>RU</option>
+        <option>EN</option>
+        <option>DE</option>
+      </select>
+  </fieldset>
+  <fieldset>
+    <input type="file" name="Your avatar" tabindex="11"/>
+  </fieldset>
+</div>
+<div class="cv-registrationFormDiv-buttonSubmit">
+          <button type="submit" name="button submit" id="submitRegistrationForm" tabindex="12">Registration</button>
+</div>
+    </form>
+    </div>
+  </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
